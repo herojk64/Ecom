@@ -1,0 +1,29 @@
+.Home_Container {
+  max-height: 90vh;
+}
+.Home_Container .FrontPreview {
+  height: 94vh;
+  width: auto;
+  position: relative;
+  background-image: url("../../Images/Background.webp");
+  background-repeat: none;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.Home_Container .FrontPreview div {
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+}
+.Home_Container .ProductCards {
+  padding: 2rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 20%);
+  gap: 2rem;
+  background-color: rgb(24, 24, 24);
+  color: #ffffff;
+}/*# sourceMappingURL=Home.css.map */

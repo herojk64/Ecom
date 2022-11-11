@@ -1,0 +1,51 @@
+@import '../../PreDefined.scss';
+.Admin_dashboards{
+    min-height: 94vh;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    .Admin_Navigation{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $darkDashOpacity;
+        width: 100%;
+        box-shadow: 0 0 10px 2px $darkLight;
+        z-index: 1;
+
+        ol{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            gap:2rem;
+            width: 100%;
+            overflow: hidden;
+            
+            li{
+                animation-name: Admin_nav;
+                animation-iteration-count: 1;
+                animation-duration: 1s;
+                padding:0.5rem 0rem;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            .Active{
+                transition: 1s;
+                background-color: $darkMain;
+            }
+        }
+        @keyframes Admin_nav {
+            from{
+                transform: translate(150%,0);
+                right:0;
+            }to{
+                transform: translate(0,0);
+                left: 0;
+            }
+        }
+    }
+}

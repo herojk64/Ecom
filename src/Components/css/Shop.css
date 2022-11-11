@@ -1,0 +1,29 @@
+.ShopContainer::-webkit-scrollbar {
+  width: 0.5rem;
+  display: block;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cfcfcf;
+  border-radius: 10px;
+}
+
+.ShopContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  max-height: 90vh;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+  overflow: scroll;
+}/*# sourceMappingURL=Shop.css.map */

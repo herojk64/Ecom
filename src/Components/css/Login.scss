@@ -1,0 +1,50 @@
+.LoginBox{
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        gap: 1rem;
+        div{
+            width: 100%;
+            input{
+                width: 100%;
+                border-radius: 10px;
+                border: 0;
+                padding:0.5rem 1rem;
+                transition: 1s ease;
+                box-shadow: 0 0 5px 1px rgba(165, 165, 165, 0.626);
+            }
+            input:focus-within{
+                border:0;
+                box-shadow: 0 0 5px 1px #353535;
+                outline: none;
+            }
+        }
+        p a{
+            text-decoration: underline;
+            color:blue;
+        }
+        button{
+            width: 100%;
+            text-align: center;
+            background-color: #000000;
+            font-weight: 800;
+            color: #ffff;
+            padding:0.2rem 0.5rem;
+            transition: 1s ease;
+            border-radius: 10px;
+            border: 0;
+            box-shadow: 0 0 5px 1px rgba(165, 165, 165, 0.626);
+        }
+        button:hover{
+            background-color: transparent;
+            color:black
+        }
+    }
+}

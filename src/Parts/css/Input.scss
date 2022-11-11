@@ -1,0 +1,32 @@
+@import '../../PreDefined.scss';
+.InputHolder{
+    position: relative;
+    
+    label{
+        position: absolute;
+        border-radius: 10px;
+        top:0;
+        left:0;
+        transform: translate(25%,35%);
+        color: $white;
+        transition: 1s ease;
+        cursor: pointer;
+    }
+    label[data-select=true]{
+        transform: translate(25%,-57%);
+        background-color:$darkMain ;
+        color:$white;
+        z-index: 1;
+
+    }
+    input{
+        background-color: transparent;
+        z-index: 1;
+    } 
+}
+.DateContainer{
+    label{
+       
+z-index: -1;        
+    }
+}

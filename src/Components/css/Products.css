@@ -1,0 +1,12 @@
+.Product_Section nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgb(49, 47, 47);
+  box-shadow: 0 0 10px 2px rgb(42, 42, 42);
+}
+.Product_Section nav ol {
+  display: flex;
+  gap: 2rem;
+}/*# sourceMappingURL=Products.css.map */

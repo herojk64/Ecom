@@ -1,0 +1,61 @@
+.Admin_dashboards {
+  min-height: 94vh;
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+.Admin_dashboards .Admin_Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(49, 47, 47, 0.5);
+  width: 100%;
+  box-shadow: 0 0 10px 2px rgb(42, 42, 42);
+  z-index: 1;
+}
+.Admin_dashboards .Admin_Navigation ol {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  overflow: hidden;
+}
+.Admin_dashboards .Admin_Navigation ol li {
+  -webkit-animation-name: Admin_nav;
+          animation-name: Admin_nav;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  padding: 0.5rem 0rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Admin_dashboards .Admin_Navigation ol .Active {
+  transition: 1s;
+  background-color: rgb(24, 24, 24);
+}
+@-webkit-keyframes Admin_nav {
+  from {
+    transform: translate(150%, 0);
+    right: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    left: 0;
+  }
+}
+@keyframes Admin_nav {
+  from {
+    transform: translate(150%, 0);
+    right: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    left: 0;
+  }
+}/*# sourceMappingURL=Admin.css.map */

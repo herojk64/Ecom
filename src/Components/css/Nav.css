@@ -1,0 +1,77 @@
+.NavigationBar {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  background-color: rgb(24, 24, 24);
+  height: 3.3rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 10px 2px rgb(42, 42, 42);
+  z-index: 1;
+}
+.NavigationBar ol:nth-child(0) {
+  margin: 0px auto;
+}
+.NavigationBar ol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 100%;
+}
+.NavigationBar ol li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.NavigationBar ol li img {
+  min-height: 100%;
+  max-width: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.NavigationBar ol li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.NavigationBar ol li a:hover {
+  box-shadow: 0 0 5px 1px rgb(42, 42, 42);
+}
+.NavigationBar ol .ProfileDrop {
+  position: relative;
+  overflow: visible;
+}
+.NavigationBar ol .ProfileDrop div {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-25%, 100%);
+  border-radius: 5px;
+  height: 10rem;
+  width: 7rem;
+  gap: 1rem;
+  background-color: rgb(24, 24, 24);
+  color: #ffffff;
+}
+.NavigationBar ol .ProfileDrop div a {
+  padding: 0rem 1rem;
+}
+.NavigationBar ol .ProfileDrop div a:hover {
+  box-shadow: 0 0 0 0;
+}
+.NavigationBar ol .ProfileDrop .Profile {
+  border-radius: 50%;
+  z-index: 1;
+}
+.NavigationBar ol .ProfileDrop:hover .Profile_drop {
+  display: flex;
+  z-index: 1;
+}/*# sourceMappingURL=Nav.css.map */

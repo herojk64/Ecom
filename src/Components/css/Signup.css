@@ -1,0 +1,50 @@
+.Signup {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+.Signup form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  gap: 1rem;
+}
+.Signup form div {
+  width: 100%;
+}
+.Signup form div input {
+  border-radius: 10px;
+  width: 100%;
+  border: 0;
+  padding: 0.5rem 1rem;
+  transition: 1s ease;
+  box-shadow: 0 0 5px 1px rgba(165, 165, 165, 0.626);
+}
+.Signup form div input:focus-within {
+  border: 0;
+  box-shadow: 0 0 5px 1px #353535;
+  outline: none;
+}
+.Signup form p a {
+  text-decoration: underline;
+  color: blue;
+}
+.Signup form button {
+  width: 100%;
+  text-align: center;
+  background-color: #000000;
+  font-weight: 800;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  transition: 1s ease;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 0 5px 1px rgba(165, 165, 165, 0.626);
+}
+.Signup form button:hover {
+  background-color: transparent;
+  color: black;
+}/*# sourceMappingURL=Signup.css.map */

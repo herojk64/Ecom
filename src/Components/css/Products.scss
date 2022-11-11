@@ -1,0 +1,16 @@
+@import '../../PreDefined.scss';
+.Product_Section{
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:1rem;
+        background-color:$darkDash;
+        box-shadow: 0 0 10px 2px $darkLight;
+        ol{
+            display: flex;
+            gap:2rem;
+            
+        }
+    }
+}

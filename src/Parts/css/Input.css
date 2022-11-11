@@ -1,0 +1,27 @@
+.InputHolder {
+  position: relative;
+}
+.InputHolder label {
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  transform: translate(25%, 35%);
+  color: #ffffff;
+  transition: 1s ease;
+  cursor: pointer;
+}
+.InputHolder label[data-select=true] {
+  transform: translate(25%, -57%);
+  background-color: rgb(24, 24, 24);
+  color: #ffffff;
+  z-index: 1;
+}
+.InputHolder input {
+  background-color: transparent;
+  z-index: 1;
+}
+
+.DateContainer label {
+  z-index: -1;
+}/*# sourceMappingURL=Input.css.map */

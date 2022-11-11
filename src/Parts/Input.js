@@ -3,8 +3,12 @@ import './css/Input.css'
 
 const Input = (probs,ref) => {
   const [Focused,SetFocused] = useState(false)
-  const InputFocus = ()=>SetFocused(true)
-  const LeaveFocus = ()=>SetFocused(false)
+  const InputFocus = ()=>{
+    SetFocused(true)
+  }
+  const LeaveFocus = ()=>{
+    SetFocused(false)
+  } 
   return (
     <div className={`InputHolder ${probs.ContainerClass}`}>
       <label htmlFor={probs.id} data-select={Focused}>{probs.label}:</label>

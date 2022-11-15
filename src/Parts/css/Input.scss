@@ -14,15 +14,18 @@
     }
     label[data-select=true]{
         transform: translate(25%,-57%);
-        background-color:$darkMain ;
+        background-color:$darkDashOpacity ;
         color:$white;
         z-index: 1;
-
     }
     input{
         background-color: transparent;
         z-index: 1;
     } 
+    input:focus-within{
+        box-shadow: 0 -2px 20px 1px $neonPink,
+           0 2px 20px 1px $neonBlue;
+    }
 }
 .DateContainer{
     label{

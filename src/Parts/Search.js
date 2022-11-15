@@ -30,7 +30,7 @@ const Search = () => {
     searchIco.style.visibility="visible";
     searchIco.style.opacity= 0.5;
     searchIco.style.opacity = 1;
-    
+    search.current.value='';
   }
  
   return (

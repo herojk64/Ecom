@@ -1,21 +1,19 @@
-.Signup {
+.Product_Add {
+  width: 100%;
   display: flex;
-  min-height: 80vh;
   align-items: center;
   justify-content: center;
 }
-.Signup form {
+.Product_Add form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  gap: 1rem;
+  gap: 1.5rem;
+  width: 40%;
 }
-.Signup form div {
+.Product_Add form div {
   width: 100%;
 }
-.Signup form div input {
+.Product_Add form div input {
   border-radius: 10px;
   width: 100%;
   border: 0;
@@ -23,16 +21,13 @@
   transition: 1s ease;
   box-shadow: 0 0 5px 1px rgba(165, 165, 165, 0.626);
 }
-.Signup form div input:focus-within {
-  border: 0;
-  box-shadow: 0 -2px 20px 1px #FF00FF, 0 2px 20px 1px #099FFF;
-  outline: none;
+.Product_Add form div .ImageUpload::-webkit-file-upload-button {
+  display: none;
 }
-.Signup form p a {
-  text-decoration: underline;
-  color: blue;
+.Product_Add form div .ImageUpload {
+  color: transparent;
 }
-.Signup form button {
+.Product_Add form button {
   width: 100%;
   text-align: center;
   background-color: #000000;
@@ -44,8 +39,8 @@
   border: 0;
   box-shadow: 0 0 5px 1px rgba(165, 165, 165, 0.626);
 }
-.Signup form button:hover {
+.Product_Add form button:hover {
+  box-shadow: 0 -2px 5px 1px #FF00FF, 0 2px 5px 2px #099FFF;
   background-color: #ffffff;
-  box-shadow: 0 -2px 20px 1px #FF00FF, 0 2px 20px 1px #099FFF;
   color: rgb(0, 0, 0);
-}/*# sourceMappingURL=Signup.css.map */
+}/*# sourceMappingURL=Add.css.map */

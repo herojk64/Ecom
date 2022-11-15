@@ -1,3 +1,4 @@
+@import '../../PreDefined.scss';
 .Signup{
     display: flex;
     min-height: 80vh;
@@ -23,7 +24,8 @@
             }
             input:focus-within{
                 border:0;
-                box-shadow: 0 0 5px 1px #353535;
+                box-shadow: 0 -2px 20px 1px $neonPink,
+           0 2px 20px 1px $neonBlue;
                 outline: none;
             }
         }
@@ -44,8 +46,10 @@
             box-shadow: 0 0 5px 1px rgba(165, 165, 165, 0.626);
         }
         button:hover{
-            background-color: transparent;
-            color:black
+            background-color:$white ;
+            box-shadow: 0 -2px 20px 1px $neonPink,
+            0 2px 20px 1px $neonBlue;
+            color:rgb(0, 0, 0)
         }
 }
 }

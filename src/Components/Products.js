@@ -10,10 +10,18 @@ const AddProduct = () => {
       <nav>
         <ol>
           <li>
-            <Link to="add">Add</Link>
+            <Link to="add">+</Link>
           </li>
-          <li>
-            <Link to="modify">Modify</Link>
+          <li className="ProductSearch_Holder">
+            <input 
+            type="text"
+            className="Product_Search"
+            id="Product_Search" 
+            placeholder=""
+            />
+            <button type="button">
+              Search
+            </button>
           </li>
         </ol>
       </nav>

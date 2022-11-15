@@ -9,7 +9,7 @@
         position: absolute;
         left:0;
         top: 0;
-        transform: translate(35%,35%);
+        transform: translate(35%,60%);
         width: 25px;
         height: 25px;
         transition: 1s;
@@ -19,6 +19,7 @@
         font-family: 'Times New Roman', Times, serif;
         border: 1px solid black;
         border-radius: 20px;
+        color: $darkMain;
         outline: none;
         width: 20%;
         padding:0rem 1rem;

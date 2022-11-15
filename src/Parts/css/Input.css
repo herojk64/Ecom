@@ -13,13 +13,16 @@
 }
 .InputHolder label[data-select=true] {
   transform: translate(25%, -57%);
-  background-color: rgb(24, 24, 24);
+  background-color: rgba(49, 47, 47, 0.5);
   color: #ffffff;
   z-index: 1;
 }
 .InputHolder input {
   background-color: transparent;
   z-index: 1;
+}
+.InputHolder input:focus-within {
+  box-shadow: 0 -2px 20px 1px #FF00FF, 0 2px 20px 1px #099FFF;
 }
 
 .DateContainer label {

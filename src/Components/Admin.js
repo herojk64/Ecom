@@ -7,7 +7,6 @@ import Requests from "./Requests";
 import Logs from "./Logs";
 const Admin = () => {
   const location = useLocation();
-  console.log(location.pathname);
   return (
     <main className="Admin_dashboards">
       <nav className="Admin_Navigation">

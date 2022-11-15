@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react'
 const userStatus = createContext();
 const UserStatus = ({children}) => {
     const [user,setUser]=useState({
-        status:true,
+        status:false,
         type:"Admin"
     })
     const setUserData=data=>setUser(data);

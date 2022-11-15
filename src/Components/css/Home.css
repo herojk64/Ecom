@@ -10,12 +10,15 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  overflow: hidden;
 }
 .Home_Container .FrontPreview div {
   position: absolute;
   bottom: 0;
+  transform: translate(0%, -10%);
   height: 1px;
   width: 100%;
+  background-color: transparent;
 }
 .Home_Container .ProductCards {
   padding: 2rem;

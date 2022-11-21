@@ -1,0 +1,26 @@
+@import '../../PreDefined.scss';
+.SearchContainer{
+    min-height: 89vh;
+    .SearchData{
+        padding:2rem;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns:repeat(4,20%);
+        gap:2rem;
+        background-color: $darkMain;
+        color: $white;
+        div{
+            animation:SearchAnimation 1s ease;
+        }
+        @keyframes SearchAnimation {
+            from{
+                transform: translate(15%,15%);
+            }
+            to{
+                transform: translate(0,0);
+            }
+        }
+    }
+}
+

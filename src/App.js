@@ -14,6 +14,7 @@ import PageError from './Components/PageError'
 import Signup from './Components/Signup'
 
 import './App.css'
+import Search from './Components/Search';
 
 const App = () => {
 
@@ -31,6 +32,7 @@ const App = () => {
           <Route exact path='/dashboard/*' element={<Admin />}/>
           <Route exact path='/wishlist' element={<Wishlist />}/>
           <Route exact path='/cart' element={<Cart />} />
+          <Route exact path='/search/:tag' element={<Search />} />
           <Route exact path='/signup' element={<Signup />} />
           <Route exact path='/*' element={<PageError />} />
         </Routes>

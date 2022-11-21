@@ -13,6 +13,7 @@ const AddProduct = () => {
             <Link to="add">+</Link>
           </li>
           <li className="ProductSearch_Holder">
+            <label htmlFor="Product_Search" hidden={true}>Search:</label>
             <input 
             type="text"
             className="Product_Search"

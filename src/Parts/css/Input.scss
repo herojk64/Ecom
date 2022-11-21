@@ -26,6 +26,12 @@
         box-shadow: 0 -2px 20px 1px $neonPink,
            0 2px 20px 1px $neonBlue;
     }
+    input[type="file"]::-webkit-file-upload-button{
+        display: none;
+    }
+    input[type="file"]{
+        color:transparent;
+    }
 }
 .DateContainer{
     label{

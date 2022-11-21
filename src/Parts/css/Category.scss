@@ -1,0 +1,80 @@
+@import '../../PreDefined.scss';
+.CategoryHolder{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+    transition: 1s ease;
+   ul{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+    li{
+        display: flex;
+        width: max-content;
+        align-items: center;
+        justify-content: center;
+        gap:0.4rem;
+        border-radius: 10px;
+        border: 0;
+        padding:0.3rem;
+        transition: 1s ease;
+        box-shadow: 0 -1px 3px 1px $neonPink,
+           0 1px 3px 1px $neonBlue;
+        
+        button{
+            height: 20px;
+            width: 20px;
+            padding: 0;
+            margin:0;
+            text-align: center;
+            font-size: 0.7rem;
+            box-shadow: 0 0 0 0;
+        }
+    }
+    }
+    select{
+        display: block;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    color:$white;
+            border-radius: 10px;
+            border: 0;
+            outline: none;
+            padding:0.5rem 1rem;
+            transition: 1s ease;
+            box-shadow: 0 0 5px 1px rgba(165, 165, 165, 0.626);
+          option{
+            
+            width: 100%;
+            outline: none;
+            background-color: $darkMain;
+            align-items: center;
+          }  
+}   
+select:focus-within{
+    outline: none;
+}
+   
+
+   input{
+        width: 100%;
+        background: transparent;
+        color:$white;
+                border-radius: 10px;
+                border: 0;
+                padding:0.5rem 1rem;
+                transition: 1s ease;
+                box-shadow: 0 0 5px 1px rgba(165, 165, 165, 0.626);
+                z-index: 1;
+    }
+    input:focus-within{
+        outline: none;
+        box-shadow: 0 -2px 20px 1px $neonPink,
+           0 2px 20px 1px $neonBlue;
+    }
+    
+}

@@ -1,0 +1,33 @@
+.SearchContainer {
+  min-height: 89vh;
+}
+.SearchContainer .SearchData {
+  padding: 2rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 20%);
+  gap: 2rem;
+  background-color: rgb(24, 24, 24);
+  color: #ffffff;
+}
+.SearchContainer .SearchData div {
+  -webkit-animation: SearchAnimation 1s ease;
+          animation: SearchAnimation 1s ease;
+}
+@-webkit-keyframes SearchAnimation {
+  from {
+    transform: translate(15%, 15%);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes SearchAnimation {
+  from {
+    transform: translate(15%, 15%);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}/*# sourceMappingURL=Search.css.map */

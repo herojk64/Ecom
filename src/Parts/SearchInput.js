@@ -1,10 +1,12 @@
 import React, { useRef } from 'react'
-import './css/Search.css'
+import './css/SearchInput.css'
 import SearchIco from '../Icons/search.png'
+import { useNavigate } from 'react-router-dom';
 
 const Search = () => {
   
   const search = useRef();
+  const location = useNavigate();
   const HandleFocusin = async() =>{
     const searchIco = document.getElementById('SearchIco');
     const searchInput = document.getElementById('searchEngine');
@@ -32,6 +34,11 @@ const Search = () => {
     searchIco.style.opacity = 1;
     search.current.value='';
   }
+  const HandleSearch=(e)=>{
+      if(e.target.value==="")location("/");
+      if(e.target.value!=="")location("/search/"+e.target.value);
+
+  }
  
   return (
     <div className='SearchBarContainer'>
@@ -51,6 +58,7 @@ const Search = () => {
         ref={search}
         onFocus={HandleFocusin}
         onBlur={HandleFocusout}
+        onKeyUp={e=>{HandleSearch(e)}}
         />
         <button
         type='button'

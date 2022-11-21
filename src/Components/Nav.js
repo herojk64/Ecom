@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { userStatus } from "../Context/userStatus";
-import SearchBar from "../Parts/Search";
+import SearchBar from "../Parts/SearchInput";
 import Logo from "../Images/Logo.jpg";
 import Default from "../Images/DefaultProfile.jpg";
 import "./css/Nav.css";

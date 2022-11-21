@@ -24,6 +24,12 @@
 .InputHolder input:focus-within {
   box-shadow: 0 -2px 20px 1px #FF00FF, 0 2px 20px 1px #099FFF;
 }
+.InputHolder input[type=file]::-webkit-file-upload-button {
+  display: none;
+}
+.InputHolder input[type=file] {
+  color: transparent;
+}
 
 .DateContainer label {
   z-index: -1;

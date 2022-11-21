@@ -1,19 +1,19 @@
 .Product_Add {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.Product_Add form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
-  width: 40%;
-}
-.Product_Add form div {
+  padding: 1rem 0.5rem;
+  margin: auto;
   width: 100%;
+  max-height: 89vh;
+  overflow: scroll;
 }
-.Product_Add form div input {
+.Product_Add div {
+  width: 40%;
+  height: auto;
+}
+.Product_Add div input {
   border-radius: 10px;
   width: 100%;
   border: 0;
@@ -21,14 +21,30 @@
   transition: 1s ease;
   box-shadow: 0 0 5px 1px rgba(165, 165, 165, 0.626);
 }
-.Product_Add form div .ImageUpload::-webkit-file-upload-button {
-  display: none;
+.Product_Add .imgDisplay {
+  display: flex;
+  width: 40%;
+  gap: 1rem;
 }
-.Product_Add form div .ImageUpload {
-  color: transparent;
+.Product_Add .imgDisplay span {
+  position: relative;
 }
-.Product_Add form button {
-  width: 100%;
+.Product_Add .imgDisplay span button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.Product_Add .imgDisplay span img {
+  height: 8rem;
+  width: 8rem;
+}
+.Product_Add button {
+  width: 40%;
   text-align: center;
   background-color: #000000;
   font-weight: 800;
@@ -39,7 +55,7 @@
   border: 0;
   box-shadow: 0 0 5px 1px rgba(165, 165, 165, 0.626);
 }
-.Product_Add form button:hover {
+.Product_Add button:hover {
   box-shadow: 0 -2px 5px 1px #FF00FF, 0 2px 5px 2px #099FFF;
   background-color: #ffffff;
   color: rgb(0, 0, 0);

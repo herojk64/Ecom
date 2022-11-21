@@ -38,6 +38,21 @@ const Input = (probs,ref) => {
       />
         ):
         probs.type === 'file'?
+        probs.ImageInput?
+        //true
+        (<input
+        type={probs.type}
+        name={probs.name}
+        className={probs.className}
+        id={probs.id}
+        placeholder=""
+        onChange={e=>{handleFile(); probs.ImageInput(e)}}
+        onFocus={InputFocus}
+        onBlur={LeaveFocus}
+        accept={probs.Accept}
+        />)
+        :
+        //false
         (<input
         type={probs.type}
         name={probs.name}
@@ -48,6 +63,7 @@ const Input = (probs,ref) => {
         onChange={handleFile}
         onFocus={InputFocus}
         onBlur={LeaveFocus}
+        accept={probs.Accept}
         />)
         :
         (
